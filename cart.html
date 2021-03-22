@@ -10,12 +10,12 @@
     p{margin: 20px;}
     #cart-table div {display:inline-block; font-size: 15px}
     #cart-table div.singleItem {display:block;  padding: 15px 0;  border-bottom: 1px solid #333}
-    
+
     .productColumn {width: 150px}
     .priceColumn {width: 90px}
     .priceColumn input {width: 70px}
     .quantityColumn {width: 80px}
-    
+
     #cart-table div.title {font-weight:700;  font-size: 18px }
 </style>
 <script language="javascript">
@@ -76,11 +76,11 @@ function quantityGen()
 
 function createOrderForm()
 {
-	
+
 	for (n=0;n<numItems;n++)
 	{
 		document.write("<div class='singleItem'>")
-			
+
             document.write ("<div class='productColumn'>");
 			document.write(itemsList[n][0]);
 			document.write ("</div>");
@@ -103,8 +103,7 @@ function createOrderForm()
     <a href="home.html"><img src="logo.png"></a>
   </h1>
 
-  <h3 class="topnav">
-    <img src="prints.png">
+  <h3 class="topnav" >
     <a href="cart.html">Cart</a>
     <a href="contact.html">Contact</a>
     <a href="aboutus.html">About us</a>
@@ -112,7 +111,6 @@ function createOrderForm()
     <a href="toys.html">Toys</a>
     <a href="appointments.html">Appointments</a>
     <a href="home.html">Home</a>
-
   </h3>
 
   <div class="spacing" style="height:180px">
@@ -129,11 +127,26 @@ function createOrderForm()
       <div class='priceColumn title'>Price Each</div>
       <div class='quantityColumn title'>Quantity</div>
   </div>
-  
-  <form>
+
+  <form style="text-align:center;
+          position:fixed;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+          color:white;
+          background-color:white;
+          background-size:30px 100%, 100% 100%;
+          width:650px;
+          height:250px;
+          padding:20px;
+          color:black;
+          margin:40px 29px auto;
+          border: 3px black solid;
+          border-radius: 10px;
+         ">
   <script language="javascript">
       createOrderForm();
-  </script>	
+  </script>
   </form>
   </div>
   <div id='total'>Total:  $0.00</div>
